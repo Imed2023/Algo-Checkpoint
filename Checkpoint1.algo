@@ -1,0 +1,21 @@
+ALGORITHM nbrwords
+
+VAR
+
+    parag : STRING[] := "This course is for computer science student or anyone who want to learn the basics of algorithms."
+    nbw : INTEGER := 0
+
+BEGIN
+
+    if (parag.length>0) THEN
+
+        FOR i FROM 0 TO parag.length-2 STEP step  DO
+            if (parag[i]:=' ') THEN
+            nbw := nbw + 1
+
+
+        END_FOR   
+        
+
+END
+
